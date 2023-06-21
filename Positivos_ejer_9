@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Positivos_ejer_9 {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in) // Creamos un objeto Scanner para leer la entrada del usuario
+        ) {
+            int numerosPositivos = 0; // Variable para contar la cantidad de números positivos
+            int numerosNegativos = 0; // Variable para contar la cantidad de números negativos
+            System.out.println("Ingrese diez números:");
+            for (int i = 1; i <= 10; i++) { // Utilizamos un bucle for para leer diez números
+                System.out.print("Número " + i + ": ");
+                int numero = scanner.nextInt(); // Leemos el número ingresado por el usuario
+                
+                if (numero > 0) { // Verificamos si el número es positivo
+                    numerosPositivos++; // Incrementamos el contador de números positivos
+                } else if (numero < 0) { // Verificamos si el número es negativo
+                    numerosNegativos++; // Incrementamos el contador de números negativos
+                }
+            }   System.out.println("Cantidad de números positivos: " + numerosPositivos);
+            System.out.println("Cantidad de números negativos: " + numerosNegativos);
+            // Cerramos el Scanner al finalizar el programa
+        } // Variable para contar la cantidad de números positivos
+    }
+}
