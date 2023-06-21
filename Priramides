@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Piramides_ejer_10 {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in) // Creamos un objeto Scanner para leer la entrada del usuario
+        ) {
+            System.out.print("Ingrese el número de filas de la pirámide: ");
+            int numFilas = scanner.nextInt(); // Leemos el número de filas ingresado por el usuario
+            
+            for (int i = 1; i <= numFilas; i++) { // Utilizamos un bucle for para imprimir las filas de la pirámide
+                for (int j = 1; j <= i; j++) { // Utilizamos otro bucle for para imprimir los números en cada fila
+                    System.out.print(j);
+                }
+                
+                for (int j = i - 1; j >= 1; j--) { // Utilizamos un tercer bucle for para imprimir los números en reversa
+                    System.out.print(j);
+                }
+                
+                System.out.println();
+            }
+        }
+    }
+}
