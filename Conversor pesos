@@ -1,0 +1,16 @@
+public class Conversor_pe {
+    public static void main(String[] args) {
+        // Declarar variables
+        double cantidadPesos = 1000.0; // Cantidad en pesos a convertir
+        double valorDolar = 3.895; // Valor de un dólar en pesos
+        
+        // Realizar la conversión
+        double cantidadDolares = cantidadPesos / valorDolar;
+        
+        // Imprimir el resultado en la consola
+        System.out.println("Cantidad en pesos: " + cantidadPesos);
+        System.out.println("Valor de un dólar: " + valorDolar);
+        System.out.println("Cantidad en dólares: " + cantidadDolares);
+    }
+}
+
