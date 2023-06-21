@@ -1,0 +1,14 @@
+public class Multi_ejer_7 {
+    public static void main(String[] args) {
+        int numero = 0; // Inicializamos la variable numero con 0
+
+        System.out.println("Números múltiplos de 8 del 0 al 100:");
+
+        while (numero <= 100) { // Mientras numero sea menor o igual a 100
+            if (numero % 8 == 0) { // Verificamos si el número es múltiplo de 8
+                System.out.println(numero); // Mostramos el número si es múltiplo de 8
+            }
+            numero++; // Incrementamos el valor de numero en 1 en cada iteración
+        }
+    }
+}
