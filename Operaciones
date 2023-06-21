@@ -1,0 +1,24 @@
+package Operaciones_Mate;
+
+public class Operaciones_2 {
+    public static void main(String[] args) {
+        int numeroA = 89;
+        int numeroB = 323;
+        
+        // Realizar las operaciones matemáticas
+        int suma = numeroA + numeroB;
+        int resta = numeroA - numeroB;
+        int multiplicacion = numeroA * numeroB;
+        int division = numeroA / numeroB;
+        
+        // Imprimir los resultados en la consola
+        System.out.println("Valor de numeroA: " + numeroA);
+        System.out.println("Valor de numeroB: " + numeroB);
+        System.out.println("Suma: " + suma);
+        System.out.println("Resta: " + resta);
+        System.out.println("Multiplicación: " + multiplicacion);
+        System.out.println("División: " + division);
+    }
+}
+
+
