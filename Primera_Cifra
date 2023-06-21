@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Primera_cifra_ejer_6 {
+    public static void main(String[] args) {
+        // Solicitar al usuario ingresar el número entero
+        try (Scanner scanner = new Scanner(System.in)) {
+            // Solicitar al usuario ingresar el número entero
+            System.out.println("Ingrese un número entero de hasta 5 cifras: ");
+            int numero = scanner.nextInt();
+            
+            // Convertir el número entero a cadena de caracteres
+            String numeroString = Integer.toString(numero);
+            
+            // Obtener la primera cifra del número
+            char primeraCifra = numeroString.charAt(0);
+            
+            // Mostrar la primera cifra del número
+            System.out.println("La primera cifra del número es: " + primeraCifra);
+        }
+    }
+}
